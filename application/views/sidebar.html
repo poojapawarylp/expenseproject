@@ -1,0 +1,31 @@
+<nav class="side-navbar">
+    <div class="side-navbar-wrapper">
+        <!-- Sidebar Header    -->
+        <div class="sidenav-header d-flex align-items-center justify-content-center">
+            <!-- User Info-->
+            <div>Expensive Manager</div>
+        </div>
+        <!-- Sidebar Navigation Menus-->
+            <div class="main-menu">
+                <div class="sidenav-header d-flex align-items-center justify-content-center">
+                    <div class="sidenav-header-logo"><a href="index.html" class="brand-small text-center"> <strong>P</strong><strong class="text-primary">P</strong></a></div>
+                </div>
+                <ul id="side-main-menu" class="side-menu list-unstyled">                  
+                    <li><a href="<?php echo base_url();?>Balances/balance"> <i class="fa fa-address-card-o" aria-hidden="true"></i>Balance</a></li>
+				    <li><a href="#formsDropdown" aria-expanded="False" data-toggle="collapse">  <i class="fa fa-plus-square" aria-hidden="true"></i>Income </a>
+                    <ul id="formsDropdown" class="collapse list-unstyled show">
+                        <li><a href="<?php echo base_url();?>Balances/incomes"></i><i class="fa fa-angle-right" aria-hidden="true"></i> Income Detaile </a></li>
+                        <li><a href="<?php echo base_url();?>Balances/Incomecategory"><i class="fa fa-angle-right" aria-hidden="true"></i> Income categories</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#formsDropdown1" aria-expanded="False" data-toggle="collapse"> <i class="fa fa-minus" aria-hidden="true"></i>Expensive</a>
+                    <ul id="formsDropdown1" class="collapse list-unstyled show">
+                        <li><a href="<?php echo base_url();?>Balances/expensive"></i><i class="fa fa-angle-right" aria-hidden="true"></i> Expensive Detaile </a></li>
+                        <li><a href="<?php echo base_url();?>Balances/expenesivecategory"><i class="fa fa-angle-right" aria-hidden="true"></i> Expensive categories</a></li>
+                    </ul>
+                    </li>
+			        <li><a href="<?php echo base_url();?>Balances/reports"><i class="fa fa-sticky-note" aria-hidden="true"></i>Reports</a>
+			   
+                </ul>
+            </div>
+</nav>
